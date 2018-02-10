@@ -106,6 +106,32 @@ var nael2 = new Vue({
         this.getallusers()
     }
 })
+var mohanad = new Vue({
+    el: "#mohanad",
+    data:
+        {
+            users: [],
+
+
+        },
+    methods: {
+        getallusers: function () {
+            $.ajax({
+                url: 'https://api.github.com/users/hadley/orgs',
+                method: 'GET',
+                data: {},
+                success: function (users) {
+                    mohanad.users = users
+                },
+                
+
+            })
+        }
+    },
+    created: function () {
+        this.getallusers()
+    }
+})
 var Child = {
     template:
      `<ul> <li>1 component</li>
