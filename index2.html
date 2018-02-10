@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeLab UOT students </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/y.jpg" alt="" width="110" height="80">
+                    <class="navbar  navbar-light bg-light">
+                        <a class="navbar-brand" href="#"></a>
+        
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index2.html"> STUDENTS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index3.html"> API FEEDS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index4.html"> FACEBOOK COMMENTS </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                AJAX&VUE NULL
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">GET</a>
+        
+                                <a class="dropdown-item" href="#">DASHBOARD</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">LOGOUT </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"></a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </nav>
+    <div class="container ">
+        <div id="std">
+
+<h5>Code Lab Students</h5>
+            <table class="table table-bordered">
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>codelab</th>
+                </tr>
+                <tr v-for="post in posts">
+                    <td>{{post.userId}}</td>
+                    <td>{{post.name}}</td>
+                    <td>{{post.codelabversion}}</td>
+
+                </tr>
+            </table> 
+            </div>
+            <script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://cdn.rawgit.com/chrisvfritz/5f0a639590d6e648933416f90ba7ae4e/raw/974aa47f8f9c5361c5233bd56be37db8ed765a09/currency-validator.js"></script>
+
+<h5>student cost calculations using component( including dis-counts)</h5>
+
+<div id="app">
+  <currency-input 
+    label="course-cost" 
+    v-model="score"
+  ></currency-input>
+  <currency-input 
+    label="coffe breaks" 
+    v-model="showing"
+  ></currency-input>
+  <currency-input 
+    label="internet" 
+    v-model="programming"
+  ></currency-input>
+  <currency-input 
+    label="paper-work" 
+    v-model="tests"
+  ></currency-input>
+  
+  <p>Total: {{ total }}</p>
+</div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+            <script src="java.js"></script>
+            <script src="codelab.js"></script>
+            <script src="vue.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>

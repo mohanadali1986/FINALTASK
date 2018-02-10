@@ -1,0 +1,26 @@
+div
+{
+    border-radius: 5px;
+    }
+
+    
+h6
+{
+    text-decoration: underline;
+    }
+
+
+table
+{
+    border: 1px dashed black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #E88741;
+    }
+
+	body {
+		background-color: white;
+	}
+	

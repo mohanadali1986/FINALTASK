@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<title>CodeLabUot</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="h-100">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/y.jpg" alt="" width="110" height="80">
+					<class="navbar  navbar-light bg-light">
+						<a class="navbar-brand" href="#"></a>
+		
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+		
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">HOME
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="index2.html"> STUDENTS </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="index3.html"> API FEEDS </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="index4.html"> FACEBOOK COMMENTS </a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false">
+								AJAX&VUE NULL
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">GET</a>
+		
+								<a class="dropdown-item" href="#">DASHBOARD</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">LOGOUT </a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#"></a>
+						</li>
+					</ul>
+		
+				</div>
+			</nav>
+	<div class="container">
+	<h6>users information</h6>	
+	<div id="nael">
+	<table class="table table-bordered">
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>email</th>
+		</tr>
+		<tr v-for="user in users">
+			<td>{{user.id}}</td>
+			<td>{{user.name}}</td>
+			<td>{{user.email}}</td>
+		</tr>
+	</table>
+</div>
+<h6>posts inforamtion</h6>
+<div id="nael2">
+	<table class="table table-bordered">
+		<tr>
+			<th>userId</th>
+			<th>title</th>
+			<th>id</th>
+		</tr>
+		<tr v-for="user in users">
+			<td>{{user.userId}}</td>
+			<td>{{user.title}}</td>
+			<td>{{user.id}}</td>
+		</tr>
+	</table>
+</div>
+
+
+  
+  <child message="hello!"></child>
+  <div id="components">
+		<my></my>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+
+
+	<script src="vue.js"></script>
+</body>
+</body>
+
+</html>
